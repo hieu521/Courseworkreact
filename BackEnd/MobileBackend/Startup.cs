@@ -60,7 +60,7 @@ namespace MobileBackend
             app.UseMiddleware<ErrorHandlerMiddleware>();
 
             // custom jwt auth middleware
-            app.UseMiddleware<JwtMiddleware>();
+            // app.UseMiddleware<JwtMiddleware>();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

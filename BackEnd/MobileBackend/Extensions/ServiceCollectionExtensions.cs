@@ -25,9 +25,9 @@ namespace MobileBackend.Extensions
         
         public static IServiceCollection AddService(this IServiceCollection service)
         {
-            service.AddScoped<IBookService, BookService>();
-            service.AddScoped<IUserService, UserService>();
-            service.AddScoped<IJwtUtils, JwtUtils>();
+            // service.AddScoped<IBookService, BookService>();
+            // service.AddScoped<IUserService, UserService>();
+            // service.AddScoped<IJwtUtils, JwtUtils>();
             service.AddScoped<IHikeService, HikingService>();
             service.AddScoped<IObservationService, ObservationService>();
             return service;
